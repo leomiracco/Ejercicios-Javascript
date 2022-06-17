@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>App Clima</title>
+</head>
+<body>
+  <main class="main">
+    <div class="main-title-container div">
+      <h1 class="main-title">Busca el clima en tu ciudad</h1>
+    </div>
+
+    <div class="instruction-title-container div">
+      <h2 class="instructions-title">Ingrese su país, seguido de su ciudad, para ver el clima actual.</h2>
+    </div>
+
+    <div class="response-container" id="response-container">
+    </div>
+
+    <div id="loading"></div>
+
+    <div id="form">
+      <select class="select-country" name="country" id="country">
+        <option selected="true" disabled="disabled" value="">--- Seleccione ---</option>
+        <option value="AR">Argentina</option>
+        <option value="CO">Colombia</option>
+        <option value="CR">Costa Rica</option>
+        <option value="ES">España</option>
+        <option value="US">Estados Unidos</option>
+        <option value="MX">México</option>
+        <option value="PE">Perú</option>
+      </select>
+
+      <input class="city" id="city" type="text" name="city" placeholder="Ingrese su ciudad...">
+      <input type="submit" class="search" id="search" value="Ver Clima">
+    </div>
+  </main>
+  
+  <!-- <script src="./js/kelvin_to_celsius.js" type="module"></script>
+  <script src="./js/print_ to_html.js" type="module"></script>
+  <script src="./js/api_query.js" type="module"></script> -->
+  <script src="./js/app.js" type="module"></script>
+</body>
+</html>

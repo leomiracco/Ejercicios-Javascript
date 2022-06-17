@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>03-Entrega-Ejercicio</title>
+  </head>
+  <body>
+
+    <div class="input-container">
+      <label for="id">Ingrese el Id de la pizza:</label>
+      <input type="number" name="id" id="id" placeholder="Id pizza...">
+    </div>
+
+    <div class="button-container">
+       <input type="submit" value="Buscar" id="search">
+    </div>
+
+    <div id="loading"></div>
+
+    <div class="main-container" id="main-container">
+
+      <div class="wrong-id-container-disabled" id="wrong-container-id"></div>
+
+      <div class="title-container-disabled" id="title-container"></div>
+
+      <div class="ingredient-container-disable" id="ingredient-container"></div>
+
+      <div class="disable-pizza-image-container" id="pizza-image-container">
+        <img id="img-pizza" src="" alt="Imagen de Pizza">
+      </div>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

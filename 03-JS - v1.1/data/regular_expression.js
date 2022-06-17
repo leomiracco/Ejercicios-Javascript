@@ -1,0 +1,1 @@
+export const regularExpression = {num: /^\d{1,3}$/};

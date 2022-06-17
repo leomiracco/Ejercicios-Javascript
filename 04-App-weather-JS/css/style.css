@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main{
+  background: linear-gradient(90deg, hsl(240, 60%, 50%), hsl(0, 60%, 50%));
+  height: 100vh;
+  padding: 2rem 0 0 0;
+}
+
+.main-title-container{
+  margin-bottom: 1rem;
+}
+
+.div{
+  display: flex;
+  justify-content: center;
+}
+
+.instruction-title-container{
+  margin-bottom: 3rem;
+}
+
+.main-title{
+  font-size: 5rem;
+}
+
+.instructions-title{
+  font-size: 2.5rem;
+}
+
+#form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: space-around;
+}
+
+.select-country,
+.city,
+.search{
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align-last: center;
+  width: 30rem;
+}
+
+.search{
+  background-color: hsl(90, 70%, 50%);
+  cursor: pointer;
+}
+
+.response-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.response-container p{
+  /* border: 1px solid white; */
+  font-size: 3rem;
+  width: 75rem;
+}
+
+#loading {
+  display: none;
+  width: 50px;
+  height: 50px;
+  /* border: 5px solid hsla(172, 61%, 26%, 0.56); */
+  border: 5px solid hsl(172, 86%, 30%);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  position: fixed;
+  top: 20%;
+  left: 48%;
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
