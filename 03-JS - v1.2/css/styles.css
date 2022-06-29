@@ -1,0 +1,818 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --colorRojo: hsl(0, 80%, 61%);
+  --colorVerde: hsl(120, 87%, 59%);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 2rem;
+}
+
+/*-------------------------------------------------*/
+/*------------------- Styles ----------------------*/
+/*-------------------------------------------------*/
+
+.absolute-container{
+  background-image: url("../assets/img/img-fondo-pizza.webp");
+  /* background-position: 0% 10%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+  width: 100%;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .absolute-container{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.pizzeria-container{
+  background-color: hsl(40, 10%, 5%, 0.8);
+  border-radius: 10px;
+  margin: 0.5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  width: 97%;
+}
+@media only screen and (min-width: 720px) and (min-height: 1520px){
+  .pizzeria-container{
+    margin: 4rem auto 3rem auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+  .pizzeria-container{
+    margin: 3.5rem auto 3rem auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 800px) and (min-height: 1200px){
+  .pizzeria-container{
+    margin: 4.5rem auto 3rem auto;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 900px) and (min-height: 1400px){
+  .pizzeria-container{
+    margin: 4.5rem auto 8rem auto;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .pizzeria-container{
+    margin: 1rem auto 1rem auto;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 640px) and (orientation: landscape){
+  .pizzeria-container{
+    width: 45rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .pizzeria-container{
+    padding: 0 1rem;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .pizzeria-container{
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (orientation: landscape){
+  .pizzeria-container{
+    margin: 2rem 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+  .pizzeria-container{
+    margin: 1rem 0 4rem 0;
+  }
+}
+@media only screen and (orientation: landscape) and (min-height: 950px){
+  .pizzeria-container{
+    margin: 2rem 0 4rem 0;
+  }
+}
+@media only screen and (min-width: 1920px) and (orientation: landscape){
+  .pizzeria-container{
+    margin: 0rem 0 4rem 0;
+    width: 60rem;
+  }
+}
+
+.pizzeria-container h1{
+  color: white;
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .pizzeria-container h1{
+    font-size: 5rem;
+  }
+}
+
+.input-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 414px) and (min-height: 736px){
+  .input-container{
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .input-container{
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 720px) and (min-height: 1520px){
+  .input-container{
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 900px) and (min-height: 1200px){
+  .input-container{
+    margin: 1rem auto 0 auto;
+    width: 55rem;
+  }
+}
+@media only screen and (min-width: 950px) and (min-height: 1200px){
+  .input-container{
+    width: 54rem;
+  }
+}
+@media only screen and (min-width: 730px) and (orientation: landscape){
+  .input-container{
+    margin: 1rem auto 0 auto;
+    width: 57rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .input-container{
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    width: 40rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (orientation: landscape){
+  .input-container{
+    margin: 0 0 1rem 0;
+  }
+}
+
+.input-container input{
+  background-color: hsl(40, 10%, 5%, 0.9);
+  border: 1px solid hsl(345, 96%, 50%);
+  border-radius: 6px;
+  font-size: 2rem;
+  height: 2.6rem;
+  width: 14.5rem;
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .input-container input{
+    font-size: 2.5rem;
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 720px) and (min-height: 1520px){
+  .input-container input{
+    padding: 1.5rem;
+    width: 22rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+  .input-container input{
+    padding: 1.55rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .input-container input{
+    background-color: hsl(40, 10%, 5%, 0.9);
+    border: 1px solid hsl(345, 96%, 50%);
+    font-size: 2rem;
+    height: 2.6rem;
+    margin-right: 2rem;
+    width: 15rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (orientation: landscape){
+  .input-container input{
+    padding: 1.5rem;
+    width: 17rem;
+  }
+}
+
+#id-input::placeholder,
+#text-input::placeholder{
+  color: white;
+}
+
+.button-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0 0.5rem 0;
+  width: 100%;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .button-container{
+    margin: 2rem 0 1rem 0;
+  }
+}
+@media only screen and (min-width: 414px) and (min-height: 736px){
+  .button-container{
+    margin: 3rem 0 2.5rem 0;
+  }
+}
+@media only screen and (min-width: 800px) and (min-height: 1200px){
+  .button-container{
+    margin: 5.5rem 0 2.5rem 0;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .button-container{
+    margin: 2rem 0 1rem 0;
+  }
+}
+@media only screen and (min-width: 640px) and (orientation: landscape){
+  .button-container{
+    margin: 2rem auto 1rem auto;
+    width: 55rem;
+  }
+}
+@media only screen and (min-width: 730px) and (orientation: landscape){
+  .button-container{
+    margin: 2rem auto 1rem auto;
+    width: 52rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .button-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem 0 1rem 0;
+    width: 75rem;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .button-container{
+    margin: 3rem 0 2rem 0;
+  }
+}
+
+.button-container input{
+  border: 1px solid hsl(345, 96%, 50%);
+  background-color: hsl(40, 10%, 5%, 0.9);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 2.1rem;
+  height: 100%;
+  margin-bottom: 1rem;
+  padding: 0rem 0;
+  width: 75%;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .button-container input{
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (min-width: 414px) and (min-height: 736px){
+  .button-container input{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .button-container input{
+    width: 45rem;
+  }
+}
+@media only screen and (min-width: 600px) and (min-height: 1024px){
+  .button-container input{
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .button-container input{
+    color: white;
+    height: 100%;
+    width: 23rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+  .button-container input{
+    font-size: 2.2rem;
+    padding: 0;
+  }
+}
+
+.main-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+  row-gap: 2rem;
+  scrollbar-color: hsl(345, 96%, 50%) hsl(0, 1%, 20%);
+  scrollbar-width: thin;
+  width: 100%;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .main-container{
+    height: 51rem;
+  }
+}
+@media only screen and (min-width: 414px) and (min-height: 736px){
+  .main-container{
+    height: 36rem;
+  }
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .main-container{
+    height: 60rem;
+  }
+}
+@media only screen and (min-width: 600px) and (min-height: 1024px){
+  .main-container{
+    height: 64rem;
+  }
+}
+@media only screen and (min-width: 720px) and (min-height: 1520px){
+  .main-container{
+    height: 108rem;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 1024px){
+  .main-container{
+    height: 58rem;
+  }
+}
+@media only screen and (min-width: 800px) and (min-height: 1200px){
+  .main-container{
+    height: 78rem;
+  }
+}
+@media only screen and (min-width: 900px) and (min-height: 1400px){
+  .main-container{
+    height: 91rem;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .main-container{
+    /* row-gap: 2rem; */
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 730px) and (orientation: landscape){
+  .main-container{
+    width: 42rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .main-container{
+    flex-direction: column;
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .main-container{
+    height: 32rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (orientation: landscape){
+  .main-container{
+    height: 39rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+  .main-container{
+    height: 50rem;
+  }
+}
+@media only screen and (orientation: landscape) and (min-height: 950px){
+  .main-container{
+    height: 68rem;
+  }
+}
+@media only screen and (min-width: 1440px) and (orientation: landscape){
+  .main-container{
+    height: 63rem;
+  }
+}
+@media only screen and (min-width: 1520px) and (orientation: landscape){
+  .main-container{
+    height: 45rem;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1920px) and (orientation: landscape){
+  .main-container{
+    height: 75rem;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 2560px) and (orientation: landscape){
+  .main-container{
+    height: 95rem;
+    width: 55%;
+  }
+}
+
+.main-container::-webkit-scrollbar{
+  -webkit-appearance: none;
+}
+
+.main-container::-webkit-scrollbar-corner{
+  -webkit-appearance: none;
+}
+
+.main-container::-webkit-scrollbar:vertical{
+  width: 1rem;
+}
+
+.main-container::-webkit-scrollbar-thumb{
+  background: hsl(345, 96%, 50%);
+  border-radius: 10px;
+}
+
+#loading {
+  animation: spin 1s ease-in-out infinite;
+  border: 3rem solid hsl(345, 96%, 50%);
+  border-radius: 50%;
+  border-top-color: hsl(40, 10%, 5%, 0.9);
+  display: none;
+  height: 6rem;
+  /* left: 50%; */
+  /* position: fixed; */
+  margin: 1.5rem auto 3rem auto;
+  /* top: 40%; */
+  -webkit-animation: spin 1s ease-in-out infinite;
+  width: 6rem;
+  /* z-index: 999; */
+}
+@media only screen and (min-width: 414px) and (min-height: 736px){
+  #loading {
+    animation: spin 1s ease-in-out infinite;
+    border: 4.5rem solid hsl(345, 96%, 50%);
+    border-top-color: hsl(40, 10%, 5%, 0.9);
+    height: 8rem;
+    width: 8rem;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  #loading {
+    animation: spin 1s ease-in-out infinite;
+    border: 4.5rem solid hsl(345, 96%, 50%);
+    border-radius: 50%;
+    border-top-color: hsl(40, 10%, 5%, 0.9);
+    display: none;
+    height: 9rem;
+    /* left: 50%; */
+    /* position: fixed; */
+    margin-bottom: 3rem;
+    /* top: 40%; */
+    -webkit-animation: spin 1s ease-in-out infinite;
+    width: 9rem;
+    /* z-index: 999; */
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.pizza-container-disabled{
+  display: none;
+}
+
+.pizza-container{
+  background-color: hsl(40, 10%, 5%, 0.9);
+  border: 3px solid hsl(345, 96%, 50%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .pizza-container{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 600px) and (min-height: 1024px){
+  .pizza-container{
+    width: 45rem;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .pizza-container{
+    width: 40rem;
+  }
+}
+@media only screen and (min-width: 730px) and (orientation: landscape){
+  .pizza-container{
+    width: 93%;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .pizza-container{
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: row; */
+    height: 20rem;
+    /* justify-content: space-between; */
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .pizza-container{
+    height: 25rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (orientation: landscape){
+  .pizza-container{
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1440px) and (orientation: landscape){
+  .pizza-container{
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1520px) and (orientation: landscape){
+  .pizza-container{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1920px) and (orientation: landscape){
+  .pizza-container{
+    width: 95%;
+  }
+}
+
+.title-container-disabled{
+  display: none;
+}
+
+.container-start-title-off{
+  display: none;
+}
+
+.container-start-title-on{
+  color: white;
+  background-color: hsl(40, 10%, 5%, 0.9);
+  border-radius: 10px;
+  display: flex;
+  padding: 1rem 1.3rem;
+}
+
+.title-container{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+  line-height: 1.5;
+  margin-top: 0.6rem;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .title-container{
+    justify-content: center;
+    line-height: 2;
+    margin-top: -4rem;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .title-container{
+    margin-top: -2rem;
+  }
+}
+
+.title-container h2{
+  color: white;
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .title-container h2{
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .title-container h2{
+    font-size: 2.6rem;
+  }
+}
+
+.ingredient-container-disable{
+  display: none;
+}
+
+.ingredient-container{
+  color: white;
+  /* padding-right: 2rem; */
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .ingredient-container{
+    color: white;
+    padding-right: 0rem;
+    width: 100%;
+  }
+}
+
+.ingredients-title{
+  font-size: 2.7rem;
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .ingredients-title{
+    margin: 3rem 0 2rem 0;
+  }
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .ingredients-title{
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .ingredients-title{
+    font-size: 2.6rem;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .ingredients-title{
+    margin: 1.5rem 0 1.7rem 0;
+  }
+}
+
+.ingredient-container ul{
+  margin-bottom: 3rem;
+  padding-left: 4rem;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .ingredient-container ul{
+    padding-left: 10rem;
+  }
+}
+@media only screen and (min-width: 384px) and (min-height: 640px){
+  .ingredient-container ul{
+    padding-left: 10rem;
+  }
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .ingredient-container ul{
+    padding-left: 17rem;
+  }
+}
+@media only screen and (min-width: 720px) and (min-height: 1520px){
+  .ingredient-container ul{
+    padding-left: 14rem;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .ingredient-container ul{
+    padding-left: 12rem;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .ingredient-container ul{
+    padding-left: 3rem;
+  }
+}
+
+.ingredient-container ul li{
+  line-height: 1.5;
+}
+@media only screen and (min-width: 540px) and (min-height: 960px){
+  .ingredient-container ul li{
+    font-size: 2.2rem;
+  }
+}
+
+.disable-pizza-image-container{
+  display: none;
+}
+
+.pizza-image-container img{
+  border-radius: 10px;
+  display: flex;
+  /* height: 24.5rem; */
+  height: 100%;
+  object-fit: cover;
+  /* width: 29.3rem; */
+  width: 100%;
+}
+@media only screen and (min-width: 375px) and (min-height: 812px){
+  .pizza-image-container img{
+    /* width: 34.3rem; */
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .pizza-image-container img{
+    border-radius: 10px;
+    display: flex;
+    object-fit: cover;
+    height: 19.3rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 940px) and (orientation: landscape){
+  .pizza-image-container img{
+    height: 24.35rem;
+  }
+}
+
+.wrong-id-container-disabled{
+  display: none;
+}
+
+.wrong-container-id{
+  animation: rotation 700ms infinite linear;
+  background-color: white;
+  border: 2px solid hsl(345, 96%, 50%);
+  box-shadow: 0px 5px 4px 1px hsl(40, 10%, 5%, 0.8);
+  border-radius: 10px;
+  display: inline-block;
+  height: 9.5rem;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+  width: 30rem;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .wrong-container-id{
+    animation: rotation 700ms infinite linear;
+    background-color: white;
+    border: 2px solid hsl(345, 96%, 50%);
+    box-shadow: 0px 5px 4px 1px hsl(40, 10%, 5%, 0.8);
+    border-radius: 10px;
+    display: inline-block;
+    height: 4.5rem;
+    margin: 1.5rem 0;
+  }
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .wrong-container-id{
+    height: 10rem;
+  }
+}
+
+.wrong-id{
+  color: hsl(345, 96%, 50%);
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+@media only screen and (min-width: 812px) and (orientation: landscape){
+  .wrong-id{
+    color: hsl(345, 96%, 50%);
+    font-size: 2.2rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
