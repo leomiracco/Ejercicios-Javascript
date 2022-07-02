@@ -75,6 +75,38 @@ export class View extends Observer{
     }
   }
 
+  //***********************************************************************/
+  //********************** IMPORTANTE!!!  *************************************************/
+  //***********************************************************************/}
+  
+  // Acá se puede utilizar el doble filter, antes obvio preguntamos si ambos inputs
+  // son distinto de cero:
+
+  // filtrarPorId(idValue, pizza){
+  //  return (idValue.length > 0) ? parseInt(idValue) === pizza.id : pizza;
+  // }
+
+  // filtrarPorText(textValue, pizza){
+  //  return (textValue.length > 0) ? textValue.toLowerCase() === pizza.nombre.replace("-", " ").toLowerCase() : pizza;
+  // }
+
+  // findMatchesByPizzaName(textValue, pizzas, pizzaArray, localStoragePizzaArray, pizzaNameNotFound){
+  //  const pizzaResult = pizzas.filter(filtrarPorText(textValue, pizza)).filter(filtrarPorId(idValue, pizza));
+  //  if(pizzaResult.length > 0){
+  //    pizzaArray.push(pizzaResult[0]);
+  //    this.beforePrintingThePizza(pizzaArray, this.controller.updateViewProperty);
+  //    this.addPizzaToLocalStorage(pizzaResult[0], localStoragePizzaArray);
+  //    this.idInput.value = "";
+  //    this.textInput.value = "";
+  //  }else{
+  //    this.errorMessage(pizzaIdNameNotFound);
+  //  }
+  // }
+
+  //***********************************************************************/
+  //***********************************************************************/
+  //***********************************************************************/
+
   findMatchesByPizzaName(textValue, pizzas, pizzaArray, localStoragePizzaArray, pizzaNameNotFound){
     const formattedText = textValue.toLowerCase();
     const pizzaResult = pizzas.filter((pizza)=>pizza.nombre.replace("-", " ").toLowerCase() === formattedText);
