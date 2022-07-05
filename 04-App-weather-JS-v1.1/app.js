@@ -5,6 +5,7 @@ import { validateInputs } from "./js/validate_inputs.js";
 export const d = document;
 const responseContainer = d.querySelector("#response-container");
 const apiKey = import.meta.env.VITE_API_KEY;
+console.log(apiKey);
 
 const beginning = (e)=>{
   const chooseCountry = d.querySelector("#country");
