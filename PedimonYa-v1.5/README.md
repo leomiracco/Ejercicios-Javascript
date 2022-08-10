@@ -1,6 +1,6 @@
 # App PedimonYa v2.0 con Javscript para NUCBA #
 
-# Página:  #
+# Página Netlify: https://glittery-paletas-967ffc.netlify.app/ #
 
 ![Integrador: html, css y javascript] 👋
 
