@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/favicon-logo-pokemon.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <title>PedimonYa v2.0</title>
+  </head>
+  <body>
+    <main class="main-container">
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo-container">
+          <img src="./assets/img/pikachu.svg" alt="" class="logo">
+        </div>
+
+        <div class="menu">
+          <a href="" class="pro menu-links">Productos</a>
+          <a href="" class="us menu-links">Nosotros</a>
+          <a href="" class="log menu-links">Login</a>
+
+          <div class="container-logo-shoppingCart">
+            <img src="./assets/img/shopping-cart.svg" alt="" class="logo-shoppingCart">
+          </div>
+          <div class="container-to-indicate-items-in-the-cart">
+            <span class="indicate-items-in-cart" id="indicate-items-in-cart"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!------------ Shopping cart menu ------------>
+      <div class="container-shopping-cart"></div>
+      
+      <!------------ Title and main cover ------------>
+      <section class="reference-to-the-products">
+        <div class="main-title-container">
+          <h1 class="main-title">Podimon</h1>
+        </div>
+        <div class="main-image-container">
+          <img src="./assets/img/pikachu-cover-image.png" alt="Imagen de Pikachu" class="pikachu-image">
+        </div>
+      </section>
+
+      <!-- Pokémon search section -->
+      <section class="search-pokemon-section" id="search-pokemon-section">
+        <input type="search" name="search" id="input-search-pokemon" id="inputId-search-pokemon">
+        <input type="button" value="Buscar" id="button-search-pokemon">
+        <input type="button" value="Vista Paginación" id="pagination-view-button">
+      </section>
+
+      <!-- View to display errors -->
+      <div class="error-message-container" id="error-message-container"></div>
+
+      <!-- View to show paging or individual Poke -->
+      <div class="pokemon-cards-container" id="pokemon-id-cards-container">
+
+        <!-- Spinner -->
+        <div id="loading"></div>
+
+        <!-- <div class="pokemons-container" id="pokemon-id-container"></div> -->
+
+      </div>
+
+      <!-- Buttons for navigation -->
+      <div class="scroll-buttons-container" id="container-id-navigation-buttons">
+        <div class="back-button-container" id="container-id-back-button">
+          <button type="button" class="back-button">
+            <span class="left-arrow"><<</span>
+            <span class="button-back">Back</span>
+          </button>
+        </div>
+        <div class="forward-button-container" id="container-id-forward-button">
+          <button type="button" class="forward-button">
+            <span class="button-forward">Next</span>
+            <span class="right-arrow">>></span>
+          </button>
+        </div>
+      </div>
+
+      <section class="about-us-section">
+        <article class="web-mission-article">
+          <h2 class="mission">Misión</h2>
+          <p>Nuestra misión es la hacer tu sueño realidad. Convertirte en dueño del ser más maravilloso del planeta, el Pokémon. </p>
+        </article>
+        <article class="web-vision-article">
+          <h2>Visión</h2>
+          <p>Existe la idea de que para hacer crecer un negocio, tienes que ser despiadado. Pero sabemos que hay una mejor manera de crecer. Uno en el que lo que es bueno para el resultado final también es bueno para los clientes. Pretendemos en el futuro, que el mejor producto, sea la experiencia de usuario para con el sitio web. Para eso, es importantísimo contar con la opinión de todos Uds. y a partir de ahí crecer tomando en cuenta cada uno de sus consejos.</p>
+        </article>
+        <article class="article-about-our-history">
+          <h2>Nuestra historia</h2>
+          <p>Como compañeros de NUCBA, hemos realizado varios viajes a Japón en el MIT en el año 2021. Fue en uno de esos viajes que descubrimos unos seres extraordinarios que sin saberlo, cambiaron nuestras vidas para siempre. Hoy estamos aquí, con la intención de compartir este mundo con todos Uds. Entonces, en Japón, país en el que un amante de los videojuegos llamado Satoshi Tajiri, con apenas 25 años tuvo la idea de diseñar un sistema en el que varios jugadores pudieran interactuar en un mundo compartido. Era una idea ambiciosa para 1990, pero fue el germen de lo que años más tarde se convertiría en un suceso a nivel mundial. Tajiri tuvo la suerte de trabajar bajo la dirección del mítico Shigeru Miyamoto (padre de Mario Bros) en varios videojuegos y luego de años de elaborar la idea, presentó en febrero de 1996 su primer Pokémon para la consola portátil Game Boy. Dos versiones salieron al mercado, Pokémon: "Red" y "Green", y luego, se sumaría el "Blue". El juego era un RPG (role playing game), que ponía al jugador en un mundo lleno de criaturas a las que debían coleccionar y entrenar. El gran agregado y principal atractivo era la posibilidad de que los jugadores interactúen y pongan a combatir sus Pokémones. La fórmula era tan sencilla como adictiva, el público se volcó masivamente al juego y la crítica lo elogió hasta el hartazgo. Poco tardó en convertirse en un fenómeno global.</p>
+        </article>
+        <article class="article-about-what-is-an-poke">
+          <h2>Qué es un Pokémon</h2>
+          <p>Las criaturas centrales de este universo son, obviamente, los Pokémones. En un principio eran 150 y la gran mayoría de ellas presentaba algún tipo de poder o habilidad especial (como puede ser el fuego, el agua o la electricidad). Varios de estos seres son principalmente dóciles y no muestran signos de agresividad, lo que los convierte en una especie de mascota perfecta (claro que eso no quita que haya algunas más agresivas, o que prefieran la vida silvestre). Los Pokémones pueden viajar en las Pokebolas, unas cápsulas en las que los coleccionistas pueden tener atrapadas a sus criaturas y sacarlas cuando sea el momento de ponerlas a luchar. En la ficción, son recurrentes los maestros Pokémones, personajes dedicados a recolectar y entrenar a sus criaturas con el fin de hacerlas más fuertes. De hecho, los Pokémones tienen la posibilidad de evolucionar y volverse más poderosos. Estos seres pueden decir una sola palabra: su propio nombre (una de las excepciones a esta regla es Meowth, el Pokémon que acompaña a los villanos del equipo Rocket).</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <header class="title-header">
+          <h2 class="footer-main-title">PédimonYa</h2>
+        </header>
+        <section class="contact-us-and-legal">
+          <div class="contact-us">
+            <h3 class="title-contact">Contacto</h3>
+            <p>0800-2759-68451</p>
+            <p>Vamos la 1717!!!</p>
+          </div>
+          <div class="legal">
+            <h3 class="title-legal">Legales</h3>
+            <p>Todos los derechos reservados.</p>
+            <p>Logística y distribución S.A "Empresa los Chimanos"</p>
+          </div>
+        </section>
+      </footer>
+
+    </main>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

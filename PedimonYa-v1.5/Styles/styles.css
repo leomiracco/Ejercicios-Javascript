@@ -1,0 +1,403 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "pokemon-hollow";
+  src: url("../assets/font/pokemon-hollow.ttf");
+  font-family: "pokemon-solid";
+  src: url("../assets/font/pokemon-solid.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: pokemon-solid;
+  letter-spacing: 0.3rem;
+  color: hsl(224, 100%, 37%);
+}
+
+:root {
+  /* --fontTypeOne:  */
+}
+
+.main-container{
+  background-color: hsl(43, 100%, 80%);
+  display: grid;
+  grid-template-rows: 6fr;
+  grid-template-columns: 1fr;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+.navbar{
+  align-items: center;
+  background-color: hsl(224, 100%, 37%);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 4rem 0 4rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 998;
+}
+
+.logo-container{
+  width: 3%;
+  min-width: 5rem;
+}
+
+.logo{
+  padding: 1rem;
+  width: 100%;
+}
+
+.menu{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+}
+
+.menu-links{
+  color: white;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.container-logo-shoppingCart{
+  background-color: hsl(43, 100%, 80%);
+  border-radius: 50%;
+  min-width: 5rem;
+  padding: 1rem;
+  position: relative;
+  width: 3%;
+}
+
+.logo-shoppingCart{
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container-to-indicate-items-in-the-cart{
+  align-items: center;
+  background-color: red;
+  border-radius: 50%;
+  justify-content: center;
+  position: fixed;
+  right: 5.4rem;
+  top: 1.3rem;
+  width: 1.8rem;
+}
+
+.indicate-items-in-cart{
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.8rem;
+  width: 1.3rem;
+}
+
+/* Acá van los estilos para el menú del carrito */
+.container-shopping-cart{
+  background-color: hsl(180, 50%, 91%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  overflow-y: scroll;
+  position: fixed;
+  right: 0;
+  transform: translate(100%, 0);
+  transition: transform 300ms ease;
+  top: 6rem;
+  width: 25%;
+  z-index: 999;
+}
+
+.csc-is-active{
+  transform: translate(0, 0);
+}
+
+.poke-container-in-cart{
+  display: flex;
+}
+
+.reference-to-the-products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 15rem;
+}
+
+.main-title-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title{
+  font-size: 10rem;
+}
+
+.main-image-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pikachu-image{
+  width: 30%;
+}
+
+.search-pokemon-section{
+  background-color: hsl(43, 100%, 80%);
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.error-message-container{
+  background-color: hsl(43, 100%, 80%);
+  display: flex;
+  justify-content: center;
+  /* margin: 2rem 0; */
+  width: 100%;
+}
+
+.errorMessage{
+  background-color: red;
+  color: white;
+  font-size: 2.4rem;
+  text-align: center;
+  width: 70%;
+}
+
+.pokemon-cards-container{
+  background-color: hsl(43, 100%, 80%);
+  /* align-items: center; */
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  justify-items: center;
+  /* height: 80vh; */
+  width: 100%;
+}
+
+.pokemon-container {
+  /* background-color: white; */
+  /* align-items: center; */
+  /* border: 2px solid green; */
+  display: grid;
+  /* gap: -5rem; */
+  column-gap: 3rem;
+  /* grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* justify-content: space-between; */
+  /* max-width: 200rem; */
+  /* margin: 0 auto; */
+  /* min-width: 70%; */
+  /* height: 65rem; */
+  /* height: 90%; */
+  /* justify-items: center; */
+  margin-top: 3rem;
+  row-gap: 3rem;
+  /* padding: 0 3rem; */
+  width: 70%;
+}
+
+.single-poke-container{
+  width: 10%;
+}
+
+.pokemon-data-container {
+  background-color: white;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  /* height: 25rem; */
+  justify-content: center;
+  /* width: 25rem; */
+  /* height: 60%; */
+  /* padding: 5%; */
+  /* width: 60%; */
+}
+
+.poke-img-container{
+  align-items: center;
+  /* border: 1px solid black; */
+  /* background-color: white; */
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  width: 20rem;
+}
+
+.pokemon-img {
+  /* align-items: center; */
+  /* border: 2px solid red; */
+  /* border: 2px solid blue; */
+  /* display: flex; */
+  height: 10rem;
+  /* height: 80%; */
+  /* object-fit: cover; */
+  /* justify-content: center; */
+  width: 10rem;
+  /* width: 60%; */
+}
+
+.pokemon-name{
+  font-size: 3rem;
+  margin: 2rem 0 0rem 0;
+}
+
+#loading {
+  animation: spin 1s ease-in-out infinite;
+  border: 3rem solid hsl(318, 82%, 63%);;
+  border-radius: 50%;
+  border-top-color: hsl(240, 6%, 7%);
+  display: none;
+  height: 15rem;
+  /* left: 50%; */
+  /* position: fixed; */
+  margin: 26rem auto 26rem auto;
+  /* top: 40%; */
+  -webkit-animation: spin 1s ease-in-out infinite;
+  width: 15rem;
+  /* z-index: 999; */
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.scroll-buttons-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem auto 0 auto;
+  width: 60rem;
+}
+
+.scroll-buttons-container button {
+  background-color: hsl(0, 2%, 12%);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0.5rem 1.7rem;
+  text-align: center;
+  text-decoration: none;
+  width: 23rem;
+}
+
+.scroll-buttons-container button {
+  transition: padding, background-color 0.4s ease-in-out;
+}
+
+.scroll-buttons-container button:hover {
+  background-color: hsl(2, 69%, 55%);
+}
+
+.scroll-buttons-container button span {
+  transition: padding 0.4s ease-in-out;
+}
+
+.back-button:hover .left-arrow {
+  padding-right: 1rem;
+}
+
+.back-button:hover .button-back {
+  /* background-color: hsl(2, 69%, 55%); */
+  padding-right: 1rem;
+}
+
+.forward-button:hover .right-arrow {
+  padding-left: 1rem;
+}
+
+.forward-button:hover .button-forward {
+  padding-left: 1rem;
+}
+
+.about-us-section{
+  align-items: center;
+  background-color: hsl(224, 100%, 37%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.web-mission-article,
+.web-vision-article,
+.article-about-our-history,
+.article-about-what-is-an-poke{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  
+  text-align: center;
+  width: 90%;
+}
+
+.mission{
+  text-align: center;
+}
+
+.footer{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-header{
+  text-align: center;
+}
+
+.contact-us-and-legal{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-main-title{
+  font-size: 4rem;
+  margin: 3rem 0 2rem 0;
+}
+
+.contact-us,
+.legal{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-contact,
+.title-legal{
+  font-size: 2rem;
+}

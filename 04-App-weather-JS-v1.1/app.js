@@ -2,7 +2,8 @@ import { connectionWithApi } from "./js/api_query.js";
 import { cleanHtml } from "./js/clean_html.js";
 import { validateInputs } from "./js/validate_inputs.js";
 
-const bcryptjs = require("bcryptjs");
+// const bcryptjs = require("bcryptjs");
+import bcryptjs from 'bcryptjs';
 
 export const d = document;
 const responseContainer = d.querySelector("#response-container");
